@@ -68,7 +68,7 @@ HEADERS = include/ofxhBinary.h                  \
 
 INCLUDES += -I../include -Iinclude -I$(EXPAT_INCLUDE) 
 
-CXXFLAGS = $(CXX_OSFLAGS) $(INCLUDES) $(OPTIMISE)
+CXXFLAGS = -std=c++03 $(CXX_OSFLAGS) $(INCLUDES) $(OPTIMISE)
 
 objects = $(INT_DIR)/ofxhParam$(OBJSUF) \
 	$(INT_DIR)/ofxhImageEffectAPI$(OBJSUF) \
